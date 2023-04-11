@@ -14,101 +14,60 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+    <main className={"bg-gray-100 min-h-screen w-screen text-black"}>
+      <main className={"max-w-screen-2xl m-auto bg-white"}>
+      {/* NAVBAR */}
+      <nav className={"bg-white p-2 flex justify-between"}>
+        <a href="" className={"font-bold text-gray-700 text-2xl"}>
+          ReserveTable
+        </a>
+        <div>
+          <div className={"flex"}>
+          <button className={"bg-blue-400 text-white border p-1 px-4 rounded mr-3"}>Sign In</button>
+          <button className={"text-black border p-1 rounded"}>Sign up</button>
           </div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+      </nav>
+      {/* NAVBAR */}
+      {/* HEADER */}
+      <div className="h-96 overflow-hidden">
+        <div className="bg-center bg-gradient-to-r from-[#0f1f47] to-[#5f6984] h-full flex justify-center items-center">
+          <h1 className="text-7xl text-white capitalize text-shadow text-center">
+            MilesStone Grill (Toronto)
+          </h1>
         </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+      </div>
+      {/* HEADER */}
+      {/* DESCRIPTION PORTION */}
+      <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
+        <div className="bg-white rounded p-3 shadow w-[70%]">
+        {/* RESTAURANT NAV */}
+          <nav className="flex text-reg border-b pb-2">
+            <a href="" className="mr-7" >Menu</a>
+            <a href="" className="mr-7" >Overview</a>
+          </nav>
+        {/* RESTAURANT NAV */}
+        {/* TITLE */}
+          <div className="mt-4 border-b pb-6">
+            <h1 className='font-bold text-6xl'>MilesStone Grill</h1>
+          </div>
+        {/* TITLE */}
+        {/* RATINGS */}
+        <div className="flex items-end">
+          <div className="ratings mt-2 flex items-center">
+            <p>*****</p>
+            <p className="text-reg ml-3">4.9</p>
+          </div>
+          <div>
+            <p className="text-reg-ml-4">600 Reviews</p>
+          </div>
         </div>
+        {/* RATINGS */}
+        </div>
+      </div>
+      {/* DESCRIPTION PORTION */}
       </main>
+    </main>
     </>
   )
 }
